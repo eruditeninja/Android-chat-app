@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include
+        android:id="@+id/login_app_bar"
+        layout="@layout/app_bar_layout"
+         />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:text="Enter Login  Detail"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login_lon_btn"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/login_email"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="186dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Login"
+        android:textColor="@color/colorAccent" />
+
+
+</RelativeLayout>

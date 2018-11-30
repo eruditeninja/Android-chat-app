@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settiing_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting_activity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_image"
+        android:layout_width="188dp"
+        android:layout_height="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:src="@drawable/download" />
+
+    <TextView
+        android:id="@+id/setting_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/setting_image"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:text="Display Name"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/setting_status"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/setting_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-99dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="207dp"
+        android:text=" Hi there ! I am using ChatIT"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/setting_btn_chgImg"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="116dp"
+        android:background="#3399ff"
+        android:text="Change Image"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/setting_stat_btn"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:background="@color/colorPrimary"
+        android:text="Change Status"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>
